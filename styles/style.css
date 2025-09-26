@@ -1,0 +1,28 @@
+@import url("./header.css");
+
+:root {
+  --color-primary: #667085; 
+  --color-secondary: #3A404E; 
+  --color-tertiary: #BE2424; 
+  --color-white: #FFFFFF;
+  --font-family-base: 'Inter', sans-serif; 
+}
+
+body {
+  font-family: var(--font-family-base); 
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; 
+}
+
+p {
+  font-weight: 400; 
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
