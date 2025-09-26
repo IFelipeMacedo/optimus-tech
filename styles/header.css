@@ -1,34 +1,38 @@
+.header {
+  margin: 1.75rem 7rem;
+}
+
 .header__nav {
   display: flex;
-  margin: 2rem 7rem;
   align-items: center;
-  gap: 7.5rem;
+  justify-content: flex-start;
+  gap: 2rem;
   font-weight: 500;
 }
 
+/* Logo */
 .header__logo {
-  color: var(--color-secondary);
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 1.115rem;
+  color: var(--color-secondary);
+  margin-right: 7.5rem;
 }
 
-.header__menu {
+.header__menu-left,
+.header__menu-right {
   display: flex;
   gap: 2rem;
-  align-items: center;
 }
 
 .header__menu-right {
-  display: flex;
-  width: 55.4vw;
-  justify-content: flex-end;
-  padding: 1.5rem;
-  gap: 2rem;
+  margin-left: auto;
 }
 
 .header__menu-link {
+  text-decoration: none;
+  color: var(--color-primary);
   white-space: nowrap;
 }
 
@@ -37,4 +41,68 @@
   border-radius: 8px;
   background-color: var(--color-tertiary);
   color: var(--color-white);
+  font-weight: 500;
 }
+
+.header__menu-link:hover {
+  opacity: 0.8;
+}
+
+/* Tablet: entre 768px e 1024px */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .header {
+    margin: 1.5rem 3rem;
+  }
+
+  .header__nav {
+    flex-wrap: wrap; /* permite que os itens quebrem linha se necessário */
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    margin-right: 3rem;
+  }
+
+  .header__menu-left,
+  .header__menu-right {
+    gap: 1.5rem;
+  }
+
+  .header__menu-right {
+    margin-left: auto;
+  }
+}
+
+/* Celular: até 768px */
+@media (max-width: 768px) {
+  .header {
+    margin: 1rem 1rem;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .header__menu-left,
+  .header__menu-right {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .header__menu-right {
+    margin-left: 0;
+  }
+
+  .header__menu-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
