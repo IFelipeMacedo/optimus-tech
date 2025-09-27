@@ -56,3 +56,61 @@
   width: 110%;
 }
 
+@media screen and (max-width: 768px) {
+  .about {
+    margin:  3rem 2rem 3rem 2rem;
+  }
+
+  .about__container-head {
+    margin-bottom: 3rem;
+    background-color: var(--calor-background);
+    padding: 2rem;
+  }
+
+  .about__subtitle {
+    font-size: 2.5rem;
+  }
+
+  .about__description {
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .about__stats-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .about__stat {
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about__stat-title {
+    font-size: 3rem;
+  }
+
+  .about__stat-description {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    margin:  5rem;
+  }
+
+  .about__container-head {
+    background-color: var(--color-background);
+    border-radius: 0.5rem;
+  }
+
+  .about__description {
+    display: none;
+  }
+
+}

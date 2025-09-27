@@ -44,3 +44,35 @@ footer {
   color: var(--color-gray);
   font-weight: 400;
 }
+
+@media screen and (max-width: 768px) {
+  .footer__container {
+    padding: 3rem 2rem 3rem 2rem;
+  }
+
+  .footer__container-title {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .footer__container-subtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .footer__container-input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .footer__container-button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    margin: 6rem;
+  }
+}
