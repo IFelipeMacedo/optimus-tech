@@ -73,6 +73,7 @@ footer {
 
 @media screen and (max-width: 480px) {
   .footer {
-    margin: 6rem;
+    margin: 0rem;
+    border-radius: 0.5rem;
   }
 }

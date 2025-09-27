@@ -32,8 +32,8 @@
 
 @media screen and (max-width: 480px) {
   .opinions {
-    margin: 6rem;
     width: 100%;
+    margin: 1rem;
   }
 
   .opinions__container {
