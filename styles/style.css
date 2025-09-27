@@ -1,10 +1,14 @@
 @import url("./header.css");
+@import url("./about.css");
+@import url("./search.css");
 
 :root {
   --color-primary: #667085; 
   --color-secondary: #3A404E; 
   --color-tertiary: #BE2424; 
   --color-white: #FFFFFF;
+  --color-black: #101828;
+  --color-dark-blue: #101928;
   --font-family-base: 'Inter', sans-serif; 
 }
 
@@ -12,7 +16,6 @@ body {
   font-family: var(--font-family-base); 
   font-size: 1rem;
   color: var(--color-primary);
-  font-size: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
